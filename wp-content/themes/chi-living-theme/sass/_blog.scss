@@ -1,0 +1,57 @@
+/* BLOG PAGE */
+
+@media screen and (min-width: 1025px) {
+    .page-id-47 .uael-post__inner-wrap {
+        height: 553px;
+    }
+}
+
+.page-id-47 .uael-post__inner-wrap.uael-post__noimage .uael-post__content-wrap {
+    margin-top: 145px;
+}
+
+@media screen and (min-width: 768px) {
+    .page-id-47 .uael-post__content-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 385px;
+    }
+}
+
+
+/* SINGLE BLOG POSTS */
+
+h2.comment-reply-title {
+    display: none;
+}
+
+
+/* products section */
+
+.single-post .post-product {
+    margin-bottom: 20px;
+}
+
+.single-post .post-product p {
+    margin-bottom: 2px;
+}
+
+.single-post .post-product .blog-product-price {
+    margin-bottom: 10px;
+}
+
+.single-post .post-product a.blog-product-link {
+    border: 2px solid #19aecb;
+    padding: 12px;
+    background-color: #ffffff;
+    color: #19aecb;
+    display: block;
+    width: 150px;
+    text-align: center;
+}
+
+.single-post .post-product a.blog-product-link:hover {
+    background-color: #19aecb;
+    color: #ffffff;
+}

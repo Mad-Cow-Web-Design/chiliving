@@ -1,0 +1,12 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.madcow-instructors-logged-out {
+	display: block !important;
+}
+
+.madcow-instructors-logged-in {
+	display: none !important;
+}

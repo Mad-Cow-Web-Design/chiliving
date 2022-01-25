@@ -1,0 +1,43 @@
+/* FIX PAGE WIDTHS ON NON-ELEMENTOR PAGES */
+
+.site-main {
+    max-width: 1140px!important;
+    padding: 10px 20px;
+}
+
+
+/* INSTRUCTOR MAP */
+
+.acf-map {
+    width: 90%;
+    height: 600px;
+    border: #ccc solid 1px;
+    margin: 0 auto;
+}
+
+
+/* SEARCH FORM */
+
+.elementor-search-form--skin-minimal .elementor-search-form__icon {
+    opacity: 1;
+}
+
+.elementor-search-form__input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #ffffff;
+}
+
+.elementor-search-form__input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #ffffff;
+}
+
+.elementor-search-form__input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #ffffff;
+}
+
+.elementor-search-form__input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #ffffff;
+}

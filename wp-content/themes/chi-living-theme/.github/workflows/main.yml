@@ -1,0 +1,25 @@
+name: Auto-deploy
+on:
+  push:
+    branches:
+      - main
+env:
+  WPENGINE_ENVIRONMENT_NAME: chiliving2021
+  WPENGINE_SSH_KEY_PRIVATE: ${{secrets.WPENGINE_SSH_KEY_PRIVATE}}
+  WPENGINE_SSH_KEY_PUBLIC: ${{secrets.WPENGINE_SSH_KEY_PUBLIC}}
+
+jobs:
+  deploy_to_wpengine:
+    name: Deploy to WP Engine
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      # CONFIGURE SSH
+      - run: mkdir ~/.ssh
+      - run: echo "$WPENGINE_SSH_KEY_PRIVATE" >> ~/.ssh/wpekey
+      - run: echo "$WPENGINE_SSH_KEY_PUBLIC" >> ~/.ssh/wpekey.pub
+      - run: chmod 600 ~/.ssh/wpekey
+      - run: chmod 644 ~/.ssh/wpekey.pub
+      - run: ssh-keyscan -t rsa "$WPENGINE_ENVIRONMENT_NAME.ssh.wpengine.net" >> ~/.ssh/known_hosts
+      # PUSH
+      - run: rsync --itemize-changes -av -e "ssh -i ~/.ssh/wpekey" $GITHUB_WORKSPACE/ ${WPENGINE_ENVIRONMENT_NAME}@${WPENGINE_ENVIRONMENT_NAME}.ssh.wpengine.net:/home/wpe-user/sites/$WPENGINE_ENVIRONMENT_NAME/wp-content/themes/chi-living-theme/
