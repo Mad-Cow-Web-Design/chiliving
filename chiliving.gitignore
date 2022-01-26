@@ -1,24 +1,24 @@
-# ignore /wp-content/languages/
-# ignore /wp-content/mu-plugins/
-# ignore /wp-content/plugins/advanced-custom-fields-pro/
-# ignore /wp-content/plugins/auto-upload-images/
-# ignore /wp-content/plugins/classic-editor/
-# ignore /wp-content/plugins/custom-post-type-ui/
-# ignore /wp-content/plugins/elementor/
-# ignore /wp-content/plugins/elementor-pro/
-# ignore /wp-content/plugins/gravityforms/
-# ignore /wp-content/plugins/imagify/
-# ignore /wp-content/plugins/jet-elements/
-# ignore /wp-content/plugins/ultimate-elementor/
-# ignore /wp-content/plugins/webtoffee-gdpr-cookie-consent/
-# ignore /wp-content/plugins/woocommerce/
-# ignore /wp-content/plugins/wordpress-seo/
-# ignore /wp-content/plugins/wpae-acf-add-on/
-# ignore /wp-content/plugins/wpae-user-add-on-pro/
-# ignore /wp-content/plugins/wpai-acf-add-on/
-# ignore /wp-content/plugins/wpai-user-add-on/
-# ignore /wp-content/plugins/wpai-woocommerce-add-on/
-# ignore /wp-content/plugins/wp-all-export-pro/
-# ignore /wp-content/plugins/wp-all-import-pro/
-# ignore /wp-content/themes/hello-elementor
-# ignore /wp-content/uploads/
+/wp-content/languages/
+/wp-content/mu-plugins/
+/wp-content/plugins/advanced-custom-fields-pro/
+/wp-content/plugins/auto-upload-images/
+/wp-content/plugins/classic-editor/
+/wp-content/plugins/custom-post-type-ui/
+/wp-content/plugins/elementor/
+/wp-content/plugins/elementor-pro/
+/wp-content/plugins/gravityforms/
+/wp-content/plugins/imagify/
+/wp-content/plugins/jet-elements/
+/wp-content/plugins/ultimate-elementor/
+/wp-content/plugins/webtoffee-gdpr-cookie-consent/
+/wp-content/plugins/woocommerce/
+/wp-content/plugins/wordpress-seo/
+/wp-content/plugins/wpae-acf-add-on/
+/wp-content/plugins/wpae-user-add-on-pro/
+/wp-content/plugins/wpai-acf-add-on/
+/wp-content/plugins/wpai-user-add-on/
+/wp-content/plugins/wpai-woocommerce-add-on/
+/wp-content/plugins/wp-all-export-pro/
+/wp-content/plugins/wp-all-import-pro/
+/wp-content/themes/hello-elementor
+/wp-content/uploads/
