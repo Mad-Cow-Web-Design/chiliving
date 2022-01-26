@@ -71,7 +71,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
     }
 
 
-    add_filter( 'woocommerce_loop_add_to_cart_link', 'ts_link_external_product_page', 16, 3 );
+/*     add_filter( 'woocommerce_loop_add_to_cart_link', 'ts_link_external_product_page', 16, 3 );
     function ts_link_external_product_page( $button, $product, $args ) {
         $url = $product->add_to_cart_url();
 
@@ -86,7 +86,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
         isset( $args['attributes'] ) ? wc_implode_html_attributes( $args['attributes'] ) : '',
         esc_html( $product->add_to_cart_text() )
         );
-    }
+    } */
     add_action( 'init', 'customize_woo_hooks', 11 );
     function customize_woo_hooks(){
         remove_action( 'woocommerce_review_before', 'woocommerce_review_display_gravatar', 10 );
@@ -142,12 +142,12 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
     /**
      * Change number of related products output
      */
-    function woo_related_products_limit() {
+/*     function woo_related_products_limit() {
         global $product;
 
         $args['posts_per_page'] = 6;
         return $args;
-    }
+    } */
     add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args', 20 );
         function jk_related_products_args( $args ) {
         $args['posts_per_page'] = 3; // 4 related products
